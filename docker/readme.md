@@ -17,8 +17,14 @@ An example build using this can be found at: [Example Dockerfile](../src/Benchma
 
 ## Credits
 
-./opencv-sharp/cpld.sh  script uses ldd to detect the dependencies of a dynamic library and copies them to the desired directory.
-   This script is used as is and credits goes to  Hemanth.HM (hemanth[dot]hm[at]gmail[dot]com).
-   Url: https://h3manth.com/content/copying-shared-library-dependencies accessed 16/04/2022
+### cpld.sh
 
-   Thanks to this approach, the image size is relatively compact and the target application so far runs on various operating systems without any compatibility issues.
+[./opencv-sharp/cpld.sh](./opencv-sharp/cpld.sh) script uses ldd to detect the dependencies of a dynamic library and copies them to the desired directory.
+
+- This script is used as is and credits goes to  **Hemanth.HM**.
+- Url: https://h3manth.com/content/copying-shared-library-dependencies **accessed 16/04/2022**
+- Thanks to this approach, the image size is relatively compact and the target application so far runs on various operating systems without any compatibility issues.
+
+### OpenCV and OpenCVsharp build process
+
+[OpenCvSharp Build Process](../src/BenchmarkApp/Dockerfile) is based on [OpenCvSharp Docker files](https://github.com/shimat/opencvsharp/blob/master/docker/ubuntu20-dotnet6sdk-opencv4.5.3/Dockerfile)
