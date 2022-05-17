@@ -1,1 +1,1 @@
-docker run -it --entrypoint /bin/bash  -v $(pwd)/reports/:/app/BenchmarkDotNet.Artifacts/ syamaner/opencvsharp-bench:1
+docker run -it  -v $(PWD)/reports/:/app/BenchmarkDotNet.Artifacts/ syamaner/opencvsharp-bench:1
