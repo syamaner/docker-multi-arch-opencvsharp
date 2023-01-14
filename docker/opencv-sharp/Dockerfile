@@ -1,12 +1,12 @@
 FROM debian:bullseye-slim AS build-native-env
 ARG TARGETPLATFORM
 ENV DEBIAN_FRONTEND=noninteractive
-# 4.5.5: 25 Dec 2021
-# https://github.com/opencv/opencv/wiki/ChangeLog#version455
-ENV OPENCV_VERSION=4.5.5
-# 4.5.3.20211228: 28 Dec 2021
-#https://github.com/shimat/opencvsharp/releases/tag/4.5.3.20211228
-ENV OPENCVSHARP_VERSION=4.5.3.20211228
+# 4.7.0: 8 December 2023
+# https://github.com/opencv/opencv/releases/tag/4.7.0
+ENV OPENCV_VERSION=4.7.0
+# 4.5.3.20211228: 13 January 2023
+# https://github.com/shimat/opencvsharp/releases/tag/4.7.0.20230114
+ENV OPENCVSHARP_VERSION=4.7.0.20230114
 
 WORKDIR /
 RUN apt-get update && apt-get -y install --no-install-recommends \
